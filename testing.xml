@@ -1,0 +1,9 @@
+<suite name = "book-flight-module">
+
+    <test name = "BookFlight">
+        <classes>
+            <class name = "com.newtours.test.FlightTest" />
+        </classes>
+    </test>
+
+</suite>
