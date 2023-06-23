@@ -21,7 +21,7 @@ public class FindFlightPage {
     @FindBy(name = "buyFlights")
     private WebElement securePurchase;
 
-    public void FindFlightPage(WebDriver driver){
+    public FindFlightPage(WebDriver driver){
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         PageFactory.initElements(driver, this);

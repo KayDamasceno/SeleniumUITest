@@ -25,7 +25,7 @@ public class FlightConfirmationPage {
     @FindBy(linkText = "SIGN-OFF")
     private WebElement signOff;
 
-    public void FlightConfirmationPage(WebDriver driver){
+    public FlightConfirmationPage(WebDriver driver){
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         PageFactory.initElements(driver, this);

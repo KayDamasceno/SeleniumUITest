@@ -21,7 +21,7 @@ public class FlightDetailsPage {
     @FindBy(name = "findFlights")
     private WebElement continueButton;
 
-    public void FlightDetailsPage(WebDriver driver){
+    public FlightDetailsPage(WebDriver driver){
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         PageFactory.initElements(driver, this);
