@@ -1,9 +1,34 @@
-<suite name = "book-flight-module">
+<suite name = "book-flight-module" parallel="tests">
 
     <test name = "BookFlight">
         <classes>
             <class name = "com.newtours.test.FlightTest" />
         </classes>
     </test>
+    <test name = "BookFlight2">
+        <classes>
+            <class name = "com.newtours.test.FlightTest" />
+        </classes>
+    </test>
+    <test name = "BookFlight3">
+        <classes>
+            <class name = "com.newtours.test.FlightTest" />
+        </classes>
+    </test><test name = "BookFlight4">
+    <classes>
+        <class name = "com.newtours.test.FlightTest" />
+    </classes>
+</test>
+    <test name = "BookFlight5">
+        <classes>
+            <class name = "com.newtours.test.FlightTest" />
+        </classes>
+    </test>
+    <test name = "BookFlight6">
+        <classes>
+            <class name = "com.newtours.test.FlightTest" />
+        </classes>
+    </test>
+
 
 </suite>

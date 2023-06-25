@@ -1,22 +1,10 @@
 package com.newtours.test;
 
 import com.newtours.page.*;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import com.test.BaseTest;
 import org.testng.annotations.Test;
 
-public class FlightTest {
-
-    private WebDriver driver;
-
-    @BeforeTest
-    public void setupDriver(){
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\kboin\\Videos\\SeleniumFramework\\chromedriver.exe");
-        this.driver = new ChromeDriver();
-
-    }
+public class FlightTest extends BaseTest {
 
     @Test
     public void registrationPageTest(){
@@ -53,8 +41,5 @@ public class FlightTest {
         flightConfirmationPage.printConfirmation();
     }
 
-    @AfterTest
-    public void quitBrowser(){
-        this.driver.quit();
-    }
+
 }
